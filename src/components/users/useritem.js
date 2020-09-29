@@ -1,18 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class useritem extends Component {
-
-    
-        state = {
-            id: 'id',
-            login: 'mojumbo',
-            avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
-            html_url: 'https://github.com/mojombo'
-        }
-    
-
-    render() {
-        const { login, avatar_url, html_url} = this.state
+const UserItem = ({user: { login, avatar_url, html_url}} ) => {
 
         return (
             <div className="card text-center">
@@ -26,8 +15,11 @@ class useritem extends Component {
                     <a href={html_url} className="btn btn-dark btn-sm my-1">More</a>
                 </div>
             </div>
-        )
-    }
+        );
+    };
+
+UserItem.propTypes = {
+    user: PropTypes.object.isRequired
 }
 
-export default useritem
+export default UserItem;
