@@ -32,6 +32,9 @@ class App extends Component {
     this.setState({ users: res.data.items, loading: false});
   }
 
+  // clearUsers from state
+  clearUsers = () => this.setState({ users: [], loading: false });
+
 
    render() {
     //What is getting send to index.html. passing down props from this state to components.
@@ -39,8 +42,13 @@ class App extends Component {
       <div className="App">
         <Navbar />
           <div className="container">
-          <Search searchUsers={this.searchUsers}/>
-          <Users loading={this.state.loading} users={this.state.users}/>
+          <Search 
+            searchUsers={this.searchUsers} 
+            clearUsers={this.clearUsers} 
+            showClear={this.state.users.length > 0 ? true : false}/>
+          <Users 
+            loading={this.state.loading} 
+            users={this.state.users}/>
           </div>
       </div>
     );
