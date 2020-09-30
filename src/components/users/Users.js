@@ -1,5 +1,5 @@
 import React from 'react';
-import UserItem from './UserItem';
+import UserItem from './Useritem';
 import Spinner from '../layout/Spinner';
 import PropTypes from 'prop-types';
 
