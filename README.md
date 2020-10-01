@@ -5,10 +5,10 @@
 
 Users can enter a name into the search bar
 
-<img href="/images/searchdjango1" />
+<img href="./images/searchdjango1.png" />
 
 The app will make a request to the github API for users with or related to that name.
 
-<img href="/images/searchdjango>
+<img href="./images/searchdjango.png" />
 
 Then the user can click on a profile to view their latest 5 repositories, username, website, activities,  as well as find a link to the selected users github profile. 
