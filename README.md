@@ -12,3 +12,5 @@ The app will make a request to the github API for users with or related to that 
 <img src="./images/searchdjango.png" />
 
 Then the user can click on a profile to view their latest 5 repositories, username, website, activities,  as well as find a link to the selected users github profile. 
+
+<img src="./images/djangoprofile.png" />
