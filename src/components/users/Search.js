@@ -3,7 +3,7 @@ import GithubContext from '../context/github/githubContext';
 import AlertContext from '../context/alert/AlertContext';
 
 const Search = () => {
-
+    //main page search bar.
     const githubContext = useContext(GithubContext);
     const alertContext = useContext(AlertContext);
     const [text, setText] = useState('');
@@ -14,7 +14,7 @@ const Search = () => {
         //value of the target.
         setText( e.target.value );
     }
-
+    //e.preventDefault to stop page from reloading
     const onSubmit = e => {
         e.preventDefault();
         if(text === '') {
